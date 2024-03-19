@@ -62,11 +62,11 @@ const constant = "Constante";
 
 console.log("Variables: Global - " + global + " - Local: " + local + " - Constante: " + constant);
 
-const Entero = 4;
-const Decimal = 6.9;
-const String = "miauu";
-const Bool = true;
-const Array = ["gato", "perro", "gallina"];
+let Entero = 4;
+let Decimal = 6.9;
+let String = "miauu";
+let Bool = true;
+let Array = ["gato", "perro", "gallina"];
 let Objeto = {
     Marca: "Toyota", 
     modelo: "Hilux", 
@@ -77,6 +77,7 @@ let Nula = null;
 function sumar(){
     return 10 + 5;
 };
+
 console.log("Variables: \nEntero: " + Entero +
  "\nDecimal: " + Decimal + "\nString: " + String +
    "\nBool: " + Bool + "\nArreglo: " + Array + 
@@ -85,3 +86,9 @@ console.log("Variables: \nEntero: " + Entero +
 console.log(
     sumar()
 );
+function Suma_indices() {
+    var arreglo = [1, 2, 3, 4, 5, 6, 7];
+    var resultado = arreglo[arreglo.length - 1] + arreglo[arreglo.length - 2] + arreglo[0];
+    alert(resultado);
+  }
+  

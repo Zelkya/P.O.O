@@ -29,5 +29,6 @@ function operandoMetodos(){
         messageold.unshift(messagenew.shift());
     }
 
+
     alert("Los datos antiguos eran: " + messagedelete + "\n Y los nuevos datos son: " + messageold);
   }

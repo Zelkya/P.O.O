@@ -25,10 +25,9 @@ function operandoMetodos(){
   
     messagedelete.reverse();
 
-    while (messagenew.length > 0){
-        messageold.unshift(messagenew.shift());
+    while (messageold.length > 0){
+        messagenew.shift(messageold.unshift());
     }
 
-
-    alert("Los datos antiguos eran: " + messagedelete + "\n Y los nuevos datos son: " + messageold);
+    alert("Los datos antiguos eran:" + messagedelete + "\n Y los nuevos datos son :" +  messagenew);
   }

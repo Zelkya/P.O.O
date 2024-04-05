@@ -1,17 +1,18 @@
 console.log("Vinculando esperate un cachito wn......");
 
-function IdentificarMayorEdad() {
+function IdentificarCualEsMayor() {
     let resultado = "";
 
-    let edad = prompt("Por favor ingrese su edad mae: ");
-    
-    if (edad >= 18) {
-        resultado = `Es mayor de edad - tiene: <h2>${edad}</h2>`
+    let numb = prompt("Por favor ingrese su numero mae: ");
+    let num2 = prompt("Ingrese su segundo numero");
+
+    if (numb >= num2) {
+        resultado = `El primer numero es mayor - tiene: <h2>${numb}</h2>`;
     } else {
-        resultado = `Es menor de edad - tiene: <h2>${edad}</h2>`
+        resultado = `el segundo numero es mayor - tiene: <h2>${num2}</h2>`;
     }
-    document.getElementById(`lista`).innerHTML = resultado;
-    
-};
+    document.getElementById("lista").innerHTML = resultado;
+}
+
 
 
